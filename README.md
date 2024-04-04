@@ -46,6 +46,14 @@
 
 #### Genrated Fake Images
 
+* Prompt: "a realistic portrait of sks, studio lighting,  dslr, ultra quality, sharp focus, tack sharp, dof, film grain, Fujifilm XT3, crystal clear, 8K UHD, highly detailed glossy eyes, high detailed skin"
+
+
+* Negative Prompt: "poorly Rendered face, poorly drawn face, poor facial details, poorly drawn hands, poorly rendered hands, low resolution, Images cut out at the top, left, right, bottom., bad composition, mutated body parts, blurry image, disfigured, oversaturated, bad anatomy, deformed body features"
+
+
+* scheduler: default
+
 <table class="center">
 <tr>
   
@@ -79,6 +87,23 @@
 
 </tr>
 </table>
+
+
+
+## Prompt Engineering Tips:
+### Eyes
+
+- To avoid bad and deformed eyes, we should use proper prompt and negative prompt ([ref](https://openaijourney.com/fix-eyes-in-stable-diffusion/#google_vignette)):
+```
+prompt += ", beautiful hazel eyes, highly detailed eyes, realistic eyes, thin eyebrows"
+negative_prompt += ", ugly eyes, imperfect eyes, deformed pupils, deformed iris,"
+
+```
+
+
+
+## TODO:
+1. use other methods to improve eyes (e.g. inpaiting)
 
 
 ## Installation
