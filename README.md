@@ -90,6 +90,228 @@
 
 
 
+
+
+
+
+
+
+
+
+
+### Neil deGrasse Tyson
+
+
+#### Real Images
+
+<table class="center">
+<tr>
+
+<tr>
+
+<td>
+<img src="./images/Neil_deGrasse_Tyson/real/1.jpg" width="300px";height:"400px">
+</td>
+
+<td>
+<img src="./images/Neil_deGrasse_Tyson/real/2.jpeg" width="300px";height:"400px">
+</td>
+
+<td>
+<img src="./images/Neil_deGrasse_Tyson/real/3.jpeg" width="300px";height:"400px">
+</td>
+
+<tr>
+
+
+<td>
+<img src="./images/Neil_deGrasse_Tyson/real/4.jpg" width="300px";height:"400px">
+</td>
+
+<td>
+<img src="./images/Neil_deGrasse_Tyson/real/5.jpg" width="300px";height:"400px">
+</td>
+
+<td>
+<img src="./images/Neil_deGrasse_Tyson/real/6.png" width="300px";height:"400px">
+</td>
+
+</tr>
+</table>
+
+
+#### Genrated Fake Images
+
+##### Prompts
+
+```
+prompt = "a realistic portrait of sks man"
+negative_prompt = ""
+
+# To avoid bad face
+prompt += ", high detailed skin"
+negative_prompt += ", poorly Rendered face, poorly drawn face, poor facial details"
+
+# To avoid deformed and bad eyes
+prompt += ", beautiful hazel eyes, highly detailed eyes, realistic eyes, thin eyebrows,"
+negative_prompt += ", ugly eyes, imperfect eyes, deformed pupils, deformed iris,"
+
+
+# To avoid bad quality of image
+prompt += ", studio lighting, dslr, ultra quality, sharp focus, tack sharp, dof, film grain, Fujifilm XT3, crystal clear, 8K UHD"
+negative_prompt += ", low resolution, Images cut out at the top, left, right, bottom., bad composition, blurry image, disfigured, oversaturated"
+```
+
+
+* scheduler: DPMSolverMultistepScheduler
+
+<table class="center">
+<tr>
+  
+<tr>
+<td>
+<img src="./images/Neil_deGrasse_Tyson/fake/1.jpg" width="300px";height:"400px">
+
+</td>
+<td>
+<img src="./images/Neil_deGrasse_Tyson/fake/2.jpg" width="300px";height:"400px">
+
+</td>
+<td>
+<img src="./images/Neil_deGrasse_Tyson/fake/3.jpg" width="300px";height:"400px">
+
+
+</td>
+
+
+<tr>
+<td>
+<img src="./images/Neil_deGrasse_Tyson/fake/4.jpg" width="300px";height:"400px">
+
+</td>
+<td>
+<img src="./images/Neil_deGrasse_Tyson/fake/5.jpg" width="300px";height:"400px">
+</td>
+
+</td>
+<td>
+<img src="./images/Neil_deGrasse_Tyson/fake/6.jpg" width="300px";height:"400px">
+</td>
+
+
+</tr>
+</table>
+
+
+
+
+
+
+
+
+
+### Rose Leslie
+
+
+#### Real Images
+
+<table class="center">
+<tr>
+
+<tr>
+
+<td>
+<img src="./images/Rose_Leslie/real/1.jpg" width="300px";height:"400px">
+</td>
+
+<td>
+<img src="./images/Rose_Leslie/real/2.jpg" width="300px";height:"400px">
+</td>
+
+<td>
+<img src="./images/Rose_Leslie/real/3.jpg" width="300px";height:"400px">
+</td>
+
+<tr>
+
+
+<td>
+<img src="./images/Rose_Leslie/real/4.png" width="300px";height:"400px">
+</td>
+
+<td>
+<img src="./images/Rose_Leslie/real/5.jpg" width="300px";height:"400px">
+</td>
+
+
+
+</tr>
+</table>
+
+
+#### Genrated Fake Images
+##### Prompts
+
+```
+prompt = "a realistic portrait of sks woman"
+negative_prompt = ""
+
+# To avoid bad face
+prompt += ", high detailed skin"
+negative_prompt += ", poorly Rendered face, poorly drawn face, poor facial details"
+
+# To avoid deformed and bad eyes
+prompt += ", beautiful hazel eyes, highly detailed eyes, realistic eyes, thin eyebrows,"
+negative_prompt += ", ugly eyes, imperfect eyes, deformed pupils, deformed iris,"
+
+
+# To avoid bad quality of image
+prompt += ", studio lighting, dslr, ultra quality, sharp focus, tack sharp, dof, film grain, Fujifilm XT3, crystal clear, 8K UHD"
+negative_prompt += ", low resolution, Images cut out at the top, left, right, bottom., bad composition, blurry image, disfigured, oversaturated"
+
+```
+
+
+* scheduler: DPMSolverMultistepScheduler
+
+<table class="center">
+<tr>
+  
+<tr>
+<td>
+<img src="./images/Rose_Leslie/fake/1.jpg" width="300px";height:"400px">
+
+</td>
+<td>
+<img src="./images/Rose_Leslie/fake/2.jpg" width="300px";height:"400px">
+
+</td>
+<td>
+<img src="./images/Rose_Leslie/fake/3.jpg" width="300px";height:"400px">
+
+
+</td>
+
+
+<tr>
+<td>
+<img src="./images/Rose_Leslie/fake/4.jpg" width="300px";height:"400px">
+
+</td>
+<td>
+<img src="./images/Rose_Leslie/fake/5.jpg" width="300px";height:"400px">
+
+</td>
+
+<td>
+<img src="./images/Rose_Leslie/fake/6.jpg" width="300px";height:"400px">
+
+</td>
+
+</tr>
+</table>
+
+
 ## Prompt Engineering Tips:
 ### Eyes
 
@@ -103,7 +325,7 @@ negative_prompt += ", ugly eyes, imperfect eyes, deformed pupils, deformed iris,
 
 
 ## TODO:
-1. use other methods to improve eyes (e.g. inpaiting)
+1. a lot of things :)
 
 
 ## Installation
@@ -168,6 +390,8 @@ pip install notebook
 pip install bitsandbytes
 pip install xformers
 pip install gradio
+pip install opencv-python
+
 ```
 
 
